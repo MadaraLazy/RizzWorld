@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rizz World 🐱✨</title>
+  <meta name="description" content="Get your Rizz on! 💖 Pop balloons, catch hearts, meow along, and vibe with kawaii chaos. Cute, silly, totally rizzy fun… and shhh 🤫 secret stuff awaits!">
+  <link id="dynamic-favicon" rel="icon" type="image/png" href="assets/icons/frame_0.png">
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <div class="viewport">
+    <div id="stack" class="stack">
+      <section id="page1" class="card" aria-label="invite">
+        <div class="panel">
+          <h1>Takhruji ma3ay? 🥺</h1>
+          <p class="lead">pleeease~ <a id="paw">🐾</a></p> 
+          <audio id="meow" src="assets/audio/tick.mp3" preload="auto"></audio>
+
+          <img id="gif1" class="gif" alt="pls cat"
+            src="assets/images/plss.gif">
+          <div class="row" style="margin-top:16px"> <button id="noBtn" class="btn btn--ghost">ino no wanna out
+              (╥﹏╥)</button> <button id="yesBtn" class="btn">yes senpai (≧◡≦)</button> </div>
+        </div>
+      </section>
+      <section id="page2" class="card" aria-label="thankyou">
+        <div class="panel">
+          <h1>Thank yoyu 💖</h1>
+          <p class="lead">don't go yet <span id="secretEgg" title="secret">!</span></p> <img id="gif2" class="gif"
+            alt="rizz gif"
+            src="assets/images/Sigma.gif">
+          <div class="row" style="margin-top:14px"> <button id="replayAudioBtn" class="btn btn--ghost">🔊 Play again
+              (1)</button> </div>
+        </div>
+      </section>
+      <section id="gameCard" class="card" aria-label="game">
+        <h2 style="color:var(--hotpink); margin:6px 0;">Catch the hearts 🎯</h2>
+        <p class="lead">💖 Tap the heart, watch the count start! 🌷</p>
+        <div style="display:flex; gap:12px; align-items:center; justify-content:center; margin-bottom:10px;">
+          <div class="pill">Collected: <b id="collected">0</b></div>
+          <div class="pill">Elapsed: <b id="elapsed">0</b>s</div>
+        </div>
+        <div id="gameCanvasWrap"></div>
+      </section>
+    </div> <!-- /#stack --> <button id="backUpBtn" class="backBtn hidden">Back ⬆️</button>
+  </div> <!-- /.viewport -->
+  <!-- RIZZ COUNTER -->
+<div id="rizzCounter" aria-live="polite" title="Rizz meter">
+  <div class="rizz-left">
+    <span class="rizz-ico">✨</span>
+    <span class="rizz-label">Rizz</span>
+  </div>
+  <div class="rizz-value"><b id="rizzValue">0</b></div>
+</div>
+
+  <div id="balloonOverlay" class="overlay hidden" aria-hidden="true">
+    <div class="gameCard">
+      <header style="display:flex; justify-content:space-between; align-items:center;">
+        <div style="font-size:20px; color:#ff4d8a; font-weight:700;">Secret Balloon Pop 🎈</div>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <div class="pill">Popped: <b id="popped">0</b>/10</div> <button id="closeBalloon"
+            class="btn btn--ghost">✖</button>
+        </div>
+      </header>
+      <div id="balloonField"
+        style="position:relative; inset:72px 12px 12px 12px; border-radius:12px; background:linear-gradient(180deg,#fff,#fff6f9); margin-top:8px; height:76%; overflow:hidden;">
+      </div>
+    </div> <!-- /.gameCard -->
+  </div> <!-- /#balloonOverlay --> 
+  <audio id="no-sound" src="assets/audio/tick.mp3" preload="auto"></audio>
+  <audio id="meow" src="assets/audio/cat-meow-1-fx-306178.mp3" preload="auto"></audio>
+  <audio id="meow" src="assets/audio/cat-meow-297927.mp3" preload="auto"></audio>
+  <audio id="meow" src="assets/audio/cat-meow-8-fx-306184.mp3" preload="auto"></audio>
+  <audio id="meow" src="assets/audio/rizz-sound-effect.mp3" preload="auto"></audio>
+  <script defer src="script.js"></script>
+  
+</body>
+
+</html>
